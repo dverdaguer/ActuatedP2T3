@@ -1,270 +1,172 @@
 {
     "bikes": [
                 {
-            "id": 10007,
+            "id": "1850866657089146912",
             "type": "bike",
             "lat": 41.787877,
             "lng": -87.590461,
             "name": "Blackstone Ave & 59th St"
         },
         {
-            "id": 10008,
+            "id": "a3ad5c90-a135-11e9-9cda-0a87ae2ba916",
             "type": "bike",
             "lat": 41.805772,
             "lng": -87.592464,
             "name": "Dorchester Ave & 49th St"
         },
         {
-            "id": 10033,
+            "id": "a3aaa17b-a135-11e9-9cda-0a87ae2ba916",
             "type": "bike",
             "lat": 41.7994549,
             "lng": -87.5947779,
             "name": "Kimbark Ave & 53rd St"
         },
         {
-            "id": 10038,
+            "id": "a3aabfe3-a135-11e9-9cda-0a87ae2ba916",
             "type": "bike",
             "lat": 41.788746,
             "lng": -87.601334,
             "name": "Ellis Ave & 58th St"
         },
         {
-            "id": 10070,
-            "type": "bike",
-            "lat": 41.7917282095,
-            "lng": -87.583945009,
-            "name": "Griffin Museum of Science and Industry"
-        },
-        {
-            "id": 10085,
+            "id": "a3a89488-a135-11e9-9cda-0a87ae2ba916",
             "type": "bike",
             "lat": 41.795264,
             "lng": -87.596471,
             "name": "Woodlawn Ave & 55th St"
         },
         {
-            "id": 10092,
+            "id": "a3b4497a-a135-11e9-9cda-0a87ae2ba916",
             "type": "bike",
             "lat": 41.796642,
             "lng": -87.625923,
             "name": "State St & 54th St"
         },
         {
-            "id": 10146,
+            "id": "a3ad8072-a135-11e9-9cda-0a87ae2ba916",
             "type": "bike",
             "lat": 41.791478,
             "lng": -87.599861,
             "name": "University Ave & 57th St"
         },
         {
-            "id": 10153,
+            "id": "a3a7b936-a135-11e9-9cda-0a87ae2ba916",
             "type": "bike",
             "lat": 41.794853,
             "lng": -87.618691,
             "name": "Prairie Ave & Garfield Blvd"
         },
         {
-            "id": 10189,
-            "type": "bike",
-            "lat": 41.7993362626,
-            "lng": -87.6009581145,
-            "name": "Ellis Ave & 53rd St"
-        },
-        {
-            "id": 10224,
+            "id": "a3a98429-a135-11e9-9cda-0a87ae2ba916",
             "type": "bike",
             "lat": 41.809443,
             "lng": -87.591875,
             "name": "Lake Park Ave & 47th St"
         },
         {
-            "id": 10243,
+            "id": "a3ad9ad9-a135-11e9-9cda-0a87ae2ba916",
             "type": "bike",
             "lat": 41.7804056457,
             "lng": -87.5914159893,
             "name": "Dorchester Ave & 63rd St"
         },
         {
-            "id": 10297,
+            "id": "a3a93622-a135-11e9-9cda-0a87ae2ba916",
             "type": "bike",
             "lat": 41.809835,
             "lng": -87.599383,
             "name": "Greenwood Ave & 47th St"
         },
         {
-            "id": 10310,
+            "id": "1838613156025764214",
             "type": "bike",
             "lat": 41.785861,
             "lng": -87.604553,
             "name": "Drexel Ave & 60th St"
         },
         {
-            "id": 10323,
+            "id": "1963673207600511026",
             "type": "bike",
             "lat": 41.80581,
             "lng": -87.6245,
             "name": "Wabash Ave & 49th St"
         },
         {
-            "id": 10380,
+            "id": "1968516035938026380",
             "type": "bike",
             "lat": 41.78715,
             "lng": -87.62395,
             "name": "Wabash Ave & 59th St"
         },
         {
-            "id": 10391,
+            "id": "a3a7a4fc-a135-11e9-9cda-0a87ae2ba916",
             "type": "bike",
             "lat": 41.809851,
             "lng": -87.616279,
             "name": "MLK Jr Dr & 47th St"
         },
         {
-            "id": 10392,
-            "type": "bike",
-            "lat": 41.7879428129,
-            "lng": -87.5883151702,
-            "name": "Harper Ave & 59th St"
-        },
-        {
-            "id": 10401,
+            "id": "a3a88f84-a135-11e9-9cda-0a87ae2ba916",
             "type": "bike",
             "lat": 41.795212,
             "lng": -87.580715,
             "name": "Shore Dr & 55th St"
         },
         {
-            "id": 10468,
-            "type": "bike",
-            "lat": 41.7994942937,
-            "lng": -87.5864498959,
-            "name": "Lake Park Ave & 53rd St"
-        },
-        {
-            "id": 10493,
-            "type": "bike",
-            "lat": 41.7943006205,
-            "lng": -87.6014497734,
-            "name": "Ellis Ave & 55th St"
-        },
-        {
-            "id": 10509,
-            "type": "bike",
-            "lat": 41.7840710728,
-            "lng": -87.6144835353,
-            "name": "Eberhart Ave & 61st St"
-        },
-        {
-            "id": 10515,
-            "type": "bike",
-            "lat": 41.7915680106,
-            "lng": -87.6078521774,
-            "name": "DuSable Museum"
-        },
-        {
-            "id": 10520,
+            "id": "1754781885939323186",
             "type": "bike",
             "lat": 41.780506,
             "lng": -87.586853,
             "name": "Stony Island Ave & 63rd St"
         },
         {
-            "id": 10545,
-            "type": "bike",
-            "lat": 41.7934294566,
-            "lng": -87.6158532619,
-            "name": "MLK Jr Dr & 56th St"
-        },
-        {
-            "id": 10565,
-            "type": "bike",
-            "lat": 41.8022946509,
-            "lng": -87.6180535802,
-            "name": "Calumet Ave & 51st St"
-        },
-        {
-            "id": 10566,
+            "id": "a3ac30c5-a135-11e9-9cda-0a87ae2ba916",
             "type": "bike",
             "lat": 41.803038,
             "lng": -87.606615,
             "name": "Cottage Grove Ave & 51st St"
         },
         {
-            "id": 10639,
+            "id": "1850868044363584392",
             "type": "bike",
             "lat": 41.787878,
             "lng": -87.598906,
             "name": "University Ave & 59th St"
         },
         {
-            "id": 10647,
+            "id": "a3aae870-a135-11e9-9cda-0a87ae2ba916",
             "type": "bike",
             "lat": 41.809855,
             "lng": -87.606755,
             "name": "Cottage Grove Ave & 47th St"
         },
         {
-            "id": 10704,
-            "type": "bike",
-            "lat": 41.7800806366,
-            "lng": -87.6159428567,
-            "name": "MLK Jr Dr & 63rd St"
-        },
-        {
-            "id": 10744,
-            "type": "bike",
-            "lat": 41.7800796326,
-            "lng": -87.6297463052,
-            "name": "Wentworth Ave & 63rd St"
-        },
-        {
-            "id": 10760,
-            "type": "bike",
-            "lat": 41.7809109642,
-            "lng": -87.5763237476,
-            "name": "63rd St Beach"
-        },
-        {
-            "id": 10830,
+            "id": "a3a5a9d0-a135-11e9-9cda-0a87ae2ba916",
             "type": "bike",
             "lat": 41.802562,
             "lng": -87.590368,
             "name": "Blackstone Ave & Hyde Park Blvd"
         },
         {
-            "id": 10833,
+            "id": "1850867138125484782",
             "type": "bike",
             "lat": 41.789381,
             "lng": -87.596479,
             "name": "Woodlawn Ave & 58th St"
         },
         {
-            "id": 10944,
-            "type": "bike",
-            "lat": 41.7805309407,
-            "lng": -87.6059702039,
-            "name": "Cottage Grove Ave & 63rd St"
-        },
-        {
-            "id": 10961,
+            "id": "a3ac0fff-a135-11e9-9cda-0a87ae2ba916",
             "type": "bike",
             "lat": 41.79161,
             "lng": -87.58748,
             "name": "Lake Park Ave & 56th St"
         },
         {
-            "id": 11012,
+            "id": "a3ad61c2-a135-11e9-9cda-0a87ae2ba916",
             "type": "bike",
             "lat": 41.802406,
             "lng": -87.586924,
             "name": "Cornell Ave & Hyde Park Blvd"
-        },
-        {
-            "id": 11034,
-            "type": "bike",
-            "lat": 41.7850971464,
-            "lng": -87.6010727606,
-            "name": "Ellis Ave & 60th St"
         }
     ],
     "cars": [

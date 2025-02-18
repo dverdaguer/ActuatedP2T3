@@ -43,7 +43,7 @@ export default function ToioMapping() {
     if (typeof window !== "undefined") {
       const map = L.map("map", {
         center: [41.7943, -87.5907],
-        zoom: 14,
+        zoom: 17,
       });
 
       L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {

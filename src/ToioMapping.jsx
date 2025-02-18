@@ -1,6 +1,7 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import L from "leaflet";
 import "leaflet/dist/leaflet.css";
+import data from "./data.json";
 
 const vehicleIcons = {
   bike: L.icon({
@@ -33,7 +34,11 @@ const vehicleIcons = {
   }),
 };
 
+const transportTypes = ['bikes', 'cars', 'buses', 'trains'];
+
 export default function ToioMapping() {
+  const [transportType, changeType] = useState(0);
+
   useEffect(() => {
     if (typeof window !== "undefined") {
       const map = L.map("map", {
@@ -45,12 +50,7 @@ export default function ToioMapping() {
         attribution: "&copy; OpenStreetMap contributors",
       }).addTo(map);
 
-      const movingObjects = [
-        { id: 1, type: "bike", lat: 41.7923, lng: -87.5957, name: "Bike" },
-        { id: 2, type: "car", lat: 41.7963, lng: -87.5897, name: "Car" },
-        { id: 3, type: "bus", lat: 41.7983, lng: -87.5857, name: "Bus" },
-        { id: 4, type: "train", lat: 41.8003, lng: -87.5827, name: "Train" },
-      ];
+      const movingObjects = data[transportTypes[transportType]];
 
       movingObjects.forEach((obj) => {
         L.marker([obj.lat, obj.lng], { icon: vehicleIcons[obj.type] })
@@ -62,7 +62,7 @@ export default function ToioMapping() {
         map.remove();
       };
     }
-  }, []);
+  }, [transportType]);
 
   return (
     <>
@@ -71,6 +71,7 @@ export default function ToioMapping() {
           filter: drop-shadow(0px 0px 3px black);
         }
       `}</style>
+      <button onClick={() => {changeType((transportType + 1) % 4)}}>CHANGE TYPE</button>
       <div id="map" style={{ width: "100vw", height: "100vh" }}></div>
     </>
   );

@@ -1,0 +1,581 @@
+{
+    "bikes": [
+                {
+            "id": 10007,
+            "type": "bike",
+            "lat": 41.787877,
+            "lng": -87.590461,
+            "name": "Blackstone Ave & 59th St"
+        },
+        {
+            "id": 10008,
+            "type": "bike",
+            "lat": 41.805772,
+            "lng": -87.592464,
+            "name": "Dorchester Ave & 49th St"
+        },
+        {
+            "id": 10033,
+            "type": "bike",
+            "lat": 41.7994549,
+            "lng": -87.5947779,
+            "name": "Kimbark Ave & 53rd St"
+        },
+        {
+            "id": 10038,
+            "type": "bike",
+            "lat": 41.788746,
+            "lng": -87.601334,
+            "name": "Ellis Ave & 58th St"
+        },
+        {
+            "id": 10070,
+            "type": "bike",
+            "lat": 41.7917282095,
+            "lng": -87.583945009,
+            "name": "Griffin Museum of Science and Industry"
+        },
+        {
+            "id": 10085,
+            "type": "bike",
+            "lat": 41.795264,
+            "lng": -87.596471,
+            "name": "Woodlawn Ave & 55th St"
+        },
+        {
+            "id": 10092,
+            "type": "bike",
+            "lat": 41.796642,
+            "lng": -87.625923,
+            "name": "State St & 54th St"
+        },
+        {
+            "id": 10146,
+            "type": "bike",
+            "lat": 41.791478,
+            "lng": -87.599861,
+            "name": "University Ave & 57th St"
+        },
+        {
+            "id": 10153,
+            "type": "bike",
+            "lat": 41.794853,
+            "lng": -87.618691,
+            "name": "Prairie Ave & Garfield Blvd"
+        },
+        {
+            "id": 10189,
+            "type": "bike",
+            "lat": 41.7993362626,
+            "lng": -87.6009581145,
+            "name": "Ellis Ave & 53rd St"
+        },
+        {
+            "id": 10224,
+            "type": "bike",
+            "lat": 41.809443,
+            "lng": -87.591875,
+            "name": "Lake Park Ave & 47th St"
+        },
+        {
+            "id": 10243,
+            "type": "bike",
+            "lat": 41.7804056457,
+            "lng": -87.5914159893,
+            "name": "Dorchester Ave & 63rd St"
+        },
+        {
+            "id": 10297,
+            "type": "bike",
+            "lat": 41.809835,
+            "lng": -87.599383,
+            "name": "Greenwood Ave & 47th St"
+        },
+        {
+            "id": 10310,
+            "type": "bike",
+            "lat": 41.785861,
+            "lng": -87.604553,
+            "name": "Drexel Ave & 60th St"
+        },
+        {
+            "id": 10323,
+            "type": "bike",
+            "lat": 41.80581,
+            "lng": -87.6245,
+            "name": "Wabash Ave & 49th St"
+        },
+        {
+            "id": 10380,
+            "type": "bike",
+            "lat": 41.78715,
+            "lng": -87.62395,
+            "name": "Wabash Ave & 59th St"
+        },
+        {
+            "id": 10391,
+            "type": "bike",
+            "lat": 41.809851,
+            "lng": -87.616279,
+            "name": "MLK Jr Dr & 47th St"
+        },
+        {
+            "id": 10392,
+            "type": "bike",
+            "lat": 41.7879428129,
+            "lng": -87.5883151702,
+            "name": "Harper Ave & 59th St"
+        },
+        {
+            "id": 10401,
+            "type": "bike",
+            "lat": 41.795212,
+            "lng": -87.580715,
+            "name": "Shore Dr & 55th St"
+        },
+        {
+            "id": 10468,
+            "type": "bike",
+            "lat": 41.7994942937,
+            "lng": -87.5864498959,
+            "name": "Lake Park Ave & 53rd St"
+        },
+        {
+            "id": 10493,
+            "type": "bike",
+            "lat": 41.7943006205,
+            "lng": -87.6014497734,
+            "name": "Ellis Ave & 55th St"
+        },
+        {
+            "id": 10509,
+            "type": "bike",
+            "lat": 41.7840710728,
+            "lng": -87.6144835353,
+            "name": "Eberhart Ave & 61st St"
+        },
+        {
+            "id": 10515,
+            "type": "bike",
+            "lat": 41.7915680106,
+            "lng": -87.6078521774,
+            "name": "DuSable Museum"
+        },
+        {
+            "id": 10520,
+            "type": "bike",
+            "lat": 41.780506,
+            "lng": -87.586853,
+            "name": "Stony Island Ave & 63rd St"
+        },
+        {
+            "id": 10545,
+            "type": "bike",
+            "lat": 41.7934294566,
+            "lng": -87.6158532619,
+            "name": "MLK Jr Dr & 56th St"
+        },
+        {
+            "id": 10565,
+            "type": "bike",
+            "lat": 41.8022946509,
+            "lng": -87.6180535802,
+            "name": "Calumet Ave & 51st St"
+        },
+        {
+            "id": 10566,
+            "type": "bike",
+            "lat": 41.803038,
+            "lng": -87.606615,
+            "name": "Cottage Grove Ave & 51st St"
+        },
+        {
+            "id": 10639,
+            "type": "bike",
+            "lat": 41.787878,
+            "lng": -87.598906,
+            "name": "University Ave & 59th St"
+        },
+        {
+            "id": 10647,
+            "type": "bike",
+            "lat": 41.809855,
+            "lng": -87.606755,
+            "name": "Cottage Grove Ave & 47th St"
+        },
+        {
+            "id": 10704,
+            "type": "bike",
+            "lat": 41.7800806366,
+            "lng": -87.6159428567,
+            "name": "MLK Jr Dr & 63rd St"
+        },
+        {
+            "id": 10744,
+            "type": "bike",
+            "lat": 41.7800796326,
+            "lng": -87.6297463052,
+            "name": "Wentworth Ave & 63rd St"
+        },
+        {
+            "id": 10760,
+            "type": "bike",
+            "lat": 41.7809109642,
+            "lng": -87.5763237476,
+            "name": "63rd St Beach"
+        },
+        {
+            "id": 10830,
+            "type": "bike",
+            "lat": 41.802562,
+            "lng": -87.590368,
+            "name": "Blackstone Ave & Hyde Park Blvd"
+        },
+        {
+            "id": 10833,
+            "type": "bike",
+            "lat": 41.789381,
+            "lng": -87.596479,
+            "name": "Woodlawn Ave & 58th St"
+        },
+        {
+            "id": 10944,
+            "type": "bike",
+            "lat": 41.7805309407,
+            "lng": -87.6059702039,
+            "name": "Cottage Grove Ave & 63rd St"
+        },
+        {
+            "id": 10961,
+            "type": "bike",
+            "lat": 41.79161,
+            "lng": -87.58748,
+            "name": "Lake Park Ave & 56th St"
+        },
+        {
+            "id": 11012,
+            "type": "bike",
+            "lat": 41.802406,
+            "lng": -87.586924,
+            "name": "Cornell Ave & Hyde Park Blvd"
+        },
+        {
+            "id": 11034,
+            "type": "bike",
+            "lat": 41.7850971464,
+            "lng": -87.6010727606,
+            "name": "Ellis Ave & 60th St"
+        }
+    ],
+    "cars": [
+         { "id": 2, "type": "car", "lat": 41.7963, "lng": -87.5897, "name": "Car" }
+    ],
+    "buses": [
+        {
+            "id": 2744,
+            "type": "bus",
+            "lat": 41.79473707400001,
+            "lng": -87.591814145,
+            "name": "55th Street & Dorchester"
+        },
+        {
+            "id": 2745,
+            "type": "bus",
+            "lat": 41.79471000199999,
+            "lng": -87.60149700199997,
+            "name": "Ellis & 55th Street"
+        },
+        {
+            "id": 3928,
+            "type": "bus",
+            "lat": 41.795113130999994,
+            "lng": -87.58774890799998,
+            "name": "55th Street & Lake Park"
+        },
+        {
+            "id": 4040,
+            "type": "bus",
+            "lat": 41.799566269000024,
+            "lng": -87.59645266400003,
+            "name": "Woodlawn & 53rd Street"
+        },
+        {
+            "id": 5037,
+            "type": "bus",
+            "lat": 41.799536502000024,
+            "lng": -87.59674739799999,
+            "name": "Woodlawn & 53rd Street"
+        },
+        {
+            "id": 5038,
+            "type": "bus",
+            "lat": 41.80215977,
+            "lng": -87.59677588900001,
+            "name": "Woodlawn & Hyde Park Blvd"
+        },
+        {
+            "id": 5039,
+            "type": "bus",
+            "lat": 41.795158759,
+            "lng": -87.59637540799997,
+            "name": "55th Street & Woodlawn"
+        },
+        {
+            "id": 5040,
+            "type": "bus",
+            "lat": 41.802583199000026,
+            "lng": -87.584000581,
+            "name": "E Hyde Park & Lake Shore Drive"
+        },
+        {
+            "id": 5041,
+            "type": "bus",
+            "lat": 41.795191734000014,
+            "lng": -87.59360015700003,
+            "name": "55th Street & Kenwood"
+        },
+        {
+            "id": 5042,
+            "type": "bus",
+            "lat": 41.79133238100002,
+            "lng": -87.598009015,
+            "name": "University & 57th Street"
+        },
+        {
+            "id": 5043,
+            "type": "bus",
+            "lat": 41.791648598999984,
+            "lng": -87.596401448,
+            "name": "Woodlawn & 57th Street"
+        },
+        {
+            "id": 5288,
+            "type": "bus",
+            "lat": 41.80249509999999,
+            "lng": -87.59033667900002,
+            "name": "East Hyde Park & Blackstone"
+        },
+        {
+            "id": 5354,
+            "type": "bus",
+            "lat": 41.802386861,
+            "lng": -87.59016592299997,
+            "name": "E Hyde Park & Blackstone"
+        },
+        {
+            "id": 5355,
+            "type": "bus",
+            "lat": 41.799468115000025,
+            "lng": -87.58396076899999,
+            "name": "S Hyde Park & 53rd Street"
+        },
+        {
+            "id": 5941,
+            "type": "bus",
+            "lat": 41.78595081200001,
+            "lng": -87.596449103,
+            "name": "60th Street & Woodlawn"
+        },
+        {
+            "id": 5942,
+            "type": "bus",
+            "lat": 41.785888211999975,
+            "lng": -87.60088970999999,
+            "name": "60th Street & Ellis"
+        },
+        {
+            "id": 6026,
+            "type": "bus",
+            "lat": 41.78592161900002,
+            "lng": -87.59772190500001,
+            "name": "60th Street & University"
+        },
+        {
+            "id": 6027,
+            "type": "bus",
+            "lat": 41.79497660099997,
+            "lng": -87.596111743,
+            "name": "55th Street & Woodlawn"
+        },
+        {
+            "id": 6028,
+            "type": "bus",
+            "lat": 41.795284391999985,
+            "lng": -87.584154098,
+            "name": "55th Street & Hyde Park Blvd"
+        },
+        {
+            "id": 6259,
+            "type": "bus",
+            "lat": 41.786235148,
+            "lng": -87.59139844399999,
+            "name": "Dorchester & 60th Street"
+        },
+        {
+            "id": 6992,
+            "type": "bus",
+            "lat": 41.799368146000006,
+            "lng": -87.60133585300002,
+            "name": "Ellis & 53rd Street"
+        },
+        {
+            "id": 7092,
+            "type": "bus",
+            "lat": 41.78940827500003,
+            "lng": -87.60131855200001,
+            "name": "5800 S Ellis"
+        },
+        {
+            "id": 8196,
+            "type": "bus",
+            "lat": 41.787376360999986,
+            "lng": -87.60130257700001,
+            "name": "Ellis & Midway Plaisance"
+        },
+        {
+            "id": 8256,
+            "type": "bus",
+            "lat": 41.786050558,
+            "lng": -87.593236295,
+            "name": "60th Street & Kenwood"
+        },
+        {
+            "id": 8490,
+            "type": "bus",
+            "lat": 41.796434956999974,
+            "lng": -87.58100724500002,
+            "name": "Shoreland Dorm"
+        },
+        {
+            "id": 8742,
+            "type": "bus",
+            "lat": 41.794912755999974,
+            "lng": -87.59809966699999,
+            "name": "University & 55th Street"
+        },
+        {
+            "id": 8918,
+            "type": "bus",
+            "lat": 41.80245200000002,
+            "lng": -87.59357699999998,
+            "name": "E Hyde Park & Kenwood"
+        },
+        {
+            "id": 8955,
+            "type": "bus",
+            "lat": 41.79503477999998,
+            "lng": -87.59301755299998,
+            "name": "55th Street & Kenwood"
+        },
+        {
+            "id": 8956,
+            "type": "bus",
+            "lat": 41.802527,
+            "lng": -87.58826199999999,
+            "name": "E Hyde Park & Lake Park"
+        },
+        {
+            "id": 8957,
+            "type": "bus",
+            "lat": 41.79556507799998,
+            "lng": -87.59160088800002,
+            "name": "55th Street & Dorchester"
+        },
+        {
+            "id": 8958,
+            "type": "bus",
+            "lat": 41.79528829399999,
+            "lng": -87.58805466000001,
+            "name": "55th Street & Lake Park"
+        },
+        {
+            "id": 8966,
+            "type": "bus",
+            "lat": 41.80235702900001,
+            "lng": -87.593239197,
+            "name": "E Hyde Park & Kenwood"
+        },
+        {
+            "id": 8967,
+            "type": "bus",
+            "lat": 41.78787137500001,
+            "lng": -87.594500632,
+            "name": "59th Street & Kimbark"
+        },
+        {
+            "id": 8968,
+            "type": "bus",
+            "lat": 41.802565499000025,
+            "lng": -87.585707028,
+            "name": "E Hyde Park & East End"
+        },
+        {
+            "id": 8987,
+            "type": "bus",
+            "lat": 41.79542943000001,
+            "lng": -87.58388018900001,
+            "name": "S Hyde Park & 55th Street"
+        },
+        {
+            "id": 8988,
+            "type": "bus",
+            "lat": 41.79494178599998,
+            "lng": -87.596477445,
+            "name": "Woodlawn & 55th Street"
+        },
+        {
+            "id": 9131,
+            "type": "bus",
+            "lat": 41.785898429999975,
+            "lng": -87.599503072,
+            "name": "1111 East 60th Street"
+        },
+        {
+            "id": 9274,
+            "type": "bus",
+            "lat": 41.78956607700002,
+            "lng": -87.59635028100001,
+            "name": "Woodlawn & 58th Street"
+        },
+        {
+            "id": 9275,
+            "type": "bus",
+            "lat": 41.791299099000014,
+            "lng": -87.60151084400002,
+            "name": "Ellis & 57th Street"
+        },
+        {
+            "id": 9277,
+            "type": "bus",
+            "lat": 41.798350253000024,
+            "lng": -87.58394862400002,
+            "name": "S Hyde Park & 54th Street"
+        },
+        {
+            "id": 9430,
+            "type": "bus",
+            "lat": 41.80241300099999,
+            "lng": -87.58808299999998,
+            "name": "E Hyde Park & Lake Park"
+        },
+        {
+            "id": 9969,
+            "type": "bus",
+            "lat": 41.802250190999985,
+            "lng": -87.59664760700002,
+            "name": "Woodlawn & Hyde Park Blvd"
+        }
+        ],
+    "trains": [
+        { "id": 4, "type": "train", "lat": 41.78708, "lng": -87.58912, "name": "Metra 59th St" },
+        { "id": 5, "type": "train", "lat": 41.77969, "lng": -87.59081, "name": "Metra 63rd St" },
+        { "id": 6, "type": "train", "lat": 41.79266, "lng": -87.58773, "name": "Metra 55th-56th-57th St" },
+        { "id": 7, "type": "train", "lat": 41.80146, "lng": -87.58726, "name": "Metra 51st/53rd St/Hyde Park" },
+        { "id": 8, "type": "train", "lat": 41.78049, "lng": -87.60594, "name": "Cottage Grove" },
+        { "id": 9, "type": "train", "lat": 41.78028, "lng": -87.61570, "name": "King Dr" },
+        { "id": 10, "type": "train", "lat": 41.79535, "lng": -87.61838, "name": "Garfield (Green)" },
+        { "id": 11, "type": "train", "lat": 41.80244, "lng": -87.61859, "name": "51st" },
+        { "id": 12, "type": "train", "lat": 41.79534, "lng": -87.63118, "name": "Garfield (Red)" },
+        { "id": 13, "type": "train", "lat": 41.78071, "lng": -87.63102, "name": "63rd" }
+    ]  
+}

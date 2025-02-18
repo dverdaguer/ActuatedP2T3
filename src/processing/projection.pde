@@ -36,6 +36,7 @@ void draw() {
   offscreen.background(255);
   offscreen.fill(0, 255, 0);
   offscreen.ellipse(surfaceMouse.x, surfaceMouse.y, 75, 75);
+  offscreen.shape(map, 0, 0, 800, 800);
   offscreen.endDraw();
 
   // most likely, you'll want a black background to minimize
@@ -44,6 +45,8 @@ void draw() {
  
   // render the scene, transformed using the corner pin surface
   surface.render(offscreen);
+  
+
 }
 
 void keyPressed() {

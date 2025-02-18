@@ -13,6 +13,8 @@ int yOffset;
 
 int[] matDimension = {45, 45, 455, 455};
 
+PShape map;
+
 
 //for OSC
 OscP5 oscP5;
@@ -27,13 +29,15 @@ void setup() {
 
   // keystone
   ks = new Keystone(this);
-  surface = ks.createCornerPinSurface(400, 300, 20);
+  surface = ks.createCornerPinSurface(800, 800, 20);
   offscreen = createGraphics(400, 300, P3D);
   
   //launch OSC sercer
   oscP5 = new OscP5(this, 3333);
   server = new NetAddress[1];
   server[0] = new NetAddress("127.0.0.1", 3334);
+  
+  map = loadShape("map.svg");
 
   //create cubes
   cubes = new Cube[nCubes];

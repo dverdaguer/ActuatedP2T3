@@ -72,6 +72,7 @@ export default function ToioMapping() {
         }
       `}</style>
       <button onClick={() => {changeType((transportType + 1) % 4)}}>CHANGE TYPE</button>
+      <div className="toiomat"></div>
       <div id="map" style={{ width: "100vw", height: "100vh" }}></div>
     </>
   );

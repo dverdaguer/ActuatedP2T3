@@ -36,3 +36,13 @@
     transform: rotate(360deg);
   }
 }
+
+.toiomat {
+  height: 900px;
+  width: 900px;
+  position: fixed;
+  top: 3%;
+  left: 20%;
+  border: solid 5px black;
+  z-index: 1000;
+}

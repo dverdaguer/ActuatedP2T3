@@ -42,8 +42,11 @@ export default function ToioMapping() {
 
   useEffect(() => {
     if (typeof window !== "undefined") {
+      // Load saved center from localStorage or use default center
+      const savedCenter = JSON.parse(localStorage.getItem("mapCenter")) || { lat: 41.7943, lng: -87.5907 };
+
       const map = L.map("map", {
-        center: [41.7943, -87.5907],
+        center: [savedCenter.lat, savedCenter.lng],
         zoom: 16,
       });
 
@@ -51,6 +54,16 @@ export default function ToioMapping() {
         attribution: "&copy; OpenStreetMap contributors",
       }).addTo(map);
 
+      // Function to update localStorage with new center
+      const updateCenter = () => {
+        const center = map.getCenter();
+        localStorage.setItem("mapCenter", JSON.stringify({ lat: center.lat, lng: center.lng }));
+      };
+
+      // Update center in localStorage whenever the map moves
+      map.on("moveend", updateCenter);
+
+      // Function to update positions inside rectangle
       const updatePositions = () => {
         const rectElement = document.getElementById("fixed-rectangle");
         const rectBounds = rectElement.getBoundingClientRect();
@@ -59,12 +72,9 @@ export default function ToioMapping() {
 
         movingObjects.forEach((obj) => {
           const point = map.latLngToContainerPoint([obj.lat, obj.lng]);
-
-          movingObjects.forEach((obj) => {
             L.marker([obj.lat, obj.lng], { icon: vehicleIcons[obj.type] })
               .addTo(map)
               .bindTooltip(obj.name, { permanent: false, direction: "top", offset: [0, -16] });
-          });
           // Check if the marker is inside the fixed rectangle
           if (
             point.x >= rectBounds.left &&
@@ -111,8 +121,8 @@ export default function ToioMapping() {
           position: fixed;
           left: 50%;
           top: 50%;
-          width: 500px;
-          height: 500px;
+          width: 600px;
+          height: 600px;
           transform: translate(-50%, -50%);
           border: 2px solid red;
           background: rgba(255, 0, 0, 0.1);
@@ -142,7 +152,7 @@ export default function ToioMapping() {
         <ul>
           {iconPositions.map((obj, index) => (
             <li key={index}>
-              {obj.name} ({obj.type}): {obj.relativeX.toFixed(2)}, {obj.relativeY.toFixed(2)}
+              {obj.name} ({obj.type}): X: {obj.relativeX.toFixed(2)}, Y: {obj.relativeY.toFixed(2)}
             </li>
           ))}
         </ul>

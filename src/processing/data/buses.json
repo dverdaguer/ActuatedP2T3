@@ -1,0 +1,296 @@
+[
+        {
+            "id": 2744,
+            "type": "bus",
+            "lat": 41.79473707400001,
+            "lng": -87.591814145,
+            "name": "55th Street & Dorchester"
+        },
+        {
+            "id": 2745,
+            "type": "bus",
+            "lat": 41.79471000199999,
+            "lng": -87.60149700199997,
+            "name": "Ellis & 55th Street"
+        },
+        {
+            "id": 3928,
+            "type": "bus",
+            "lat": 41.795113130999994,
+            "lng": -87.58774890799998,
+            "name": "55th Street & Lake Park"
+        },
+        {
+            "id": 4040,
+            "type": "bus",
+            "lat": 41.799566269000024,
+            "lng": -87.59645266400003,
+            "name": "Woodlawn & 53rd Street"
+        },
+        {
+            "id": 5037,
+            "type": "bus",
+            "lat": 41.799536502000024,
+            "lng": -87.59674739799999,
+            "name": "Woodlawn & 53rd Street"
+        },
+        {
+            "id": 5038,
+            "type": "bus",
+            "lat": 41.80215977,
+            "lng": -87.59677588900001,
+            "name": "Woodlawn & Hyde Park Blvd"
+        },
+        {
+            "id": 5039,
+            "type": "bus",
+            "lat": 41.795158759,
+            "lng": -87.59637540799997,
+            "name": "55th Street & Woodlawn"
+        },
+        {
+            "id": 5040,
+            "type": "bus",
+            "lat": 41.802583199000026,
+            "lng": -87.584000581,
+            "name": "E Hyde Park & Lake Shore Drive"
+        },
+        {
+            "id": 5041,
+            "type": "bus",
+            "lat": 41.795191734000014,
+            "lng": -87.59360015700003,
+            "name": "55th Street & Kenwood"
+        },
+        {
+            "id": 5042,
+            "type": "bus",
+            "lat": 41.79133238100002,
+            "lng": -87.598009015,
+            "name": "University & 57th Street"
+        },
+        {
+            "id": 5043,
+            "type": "bus",
+            "lat": 41.791648598999984,
+            "lng": -87.596401448,
+            "name": "Woodlawn & 57th Street"
+        },
+        {
+            "id": 5288,
+            "type": "bus",
+            "lat": 41.80249509999999,
+            "lng": -87.59033667900002,
+            "name": "East Hyde Park & Blackstone"
+        },
+        {
+            "id": 5354,
+            "type": "bus",
+            "lat": 41.802386861,
+            "lng": -87.59016592299997,
+            "name": "E Hyde Park & Blackstone"
+        },
+        {
+            "id": 5355,
+            "type": "bus",
+            "lat": 41.799468115000025,
+            "lng": -87.58396076899999,
+            "name": "S Hyde Park & 53rd Street"
+        },
+        {
+            "id": 5941,
+            "type": "bus",
+            "lat": 41.78595081200001,
+            "lng": -87.596449103,
+            "name": "60th Street & Woodlawn"
+        },
+        {
+            "id": 5942,
+            "type": "bus",
+            "lat": 41.785888211999975,
+            "lng": -87.60088970999999,
+            "name": "60th Street & Ellis"
+        },
+        {
+            "id": 6026,
+            "type": "bus",
+            "lat": 41.78592161900002,
+            "lng": -87.59772190500001,
+            "name": "60th Street & University"
+        },
+        {
+            "id": 6027,
+            "type": "bus",
+            "lat": 41.79497660099997,
+            "lng": -87.596111743,
+            "name": "55th Street & Woodlawn"
+        },
+        {
+            "id": 6028,
+            "type": "bus",
+            "lat": 41.795284391999985,
+            "lng": -87.584154098,
+            "name": "55th Street & Hyde Park Blvd"
+        },
+        {
+            "id": 6259,
+            "type": "bus",
+            "lat": 41.786235148,
+            "lng": -87.59139844399999,
+            "name": "Dorchester & 60th Street"
+        },
+        {
+            "id": 6992,
+            "type": "bus",
+            "lat": 41.799368146000006,
+            "lng": -87.60133585300002,
+            "name": "Ellis & 53rd Street"
+        },
+        {
+            "id": 7092,
+            "type": "bus",
+            "lat": 41.78940827500003,
+            "lng": -87.60131855200001,
+            "name": "5800 S Ellis"
+        },
+        {
+            "id": 8196,
+            "type": "bus",
+            "lat": 41.787376360999986,
+            "lng": -87.60130257700001,
+            "name": "Ellis & Midway Plaisance"
+        },
+        {
+            "id": 8256,
+            "type": "bus",
+            "lat": 41.786050558,
+            "lng": -87.593236295,
+            "name": "60th Street & Kenwood"
+        },
+        {
+            "id": 8490,
+            "type": "bus",
+            "lat": 41.796434956999974,
+            "lng": -87.58100724500002,
+            "name": "Shoreland Dorm"
+        },
+        {
+            "id": 8742,
+            "type": "bus",
+            "lat": 41.794912755999974,
+            "lng": -87.59809966699999,
+            "name": "University & 55th Street"
+        },
+        {
+            "id": 8918,
+            "type": "bus",
+            "lat": 41.80245200000002,
+            "lng": -87.59357699999998,
+            "name": "E Hyde Park & Kenwood"
+        },
+        {
+            "id": 8955,
+            "type": "bus",
+            "lat": 41.79503477999998,
+            "lng": -87.59301755299998,
+            "name": "55th Street & Kenwood"
+        },
+        {
+            "id": 8956,
+            "type": "bus",
+            "lat": 41.802527,
+            "lng": -87.58826199999999,
+            "name": "E Hyde Park & Lake Park"
+        },
+        {
+            "id": 8957,
+            "type": "bus",
+            "lat": 41.79556507799998,
+            "lng": -87.59160088800002,
+            "name": "55th Street & Dorchester"
+        },
+        {
+            "id": 8958,
+            "type": "bus",
+            "lat": 41.79528829399999,
+            "lng": -87.58805466000001,
+            "name": "55th Street & Lake Park"
+        },
+        {
+            "id": 8966,
+            "type": "bus",
+            "lat": 41.80235702900001,
+            "lng": -87.593239197,
+            "name": "E Hyde Park & Kenwood"
+        },
+        {
+            "id": 8967,
+            "type": "bus",
+            "lat": 41.78787137500001,
+            "lng": -87.594500632,
+            "name": "59th Street & Kimbark"
+        },
+        {
+            "id": 8968,
+            "type": "bus",
+            "lat": 41.802565499000025,
+            "lng": -87.585707028,
+            "name": "E Hyde Park & East End"
+        },
+        {
+            "id": 8987,
+            "type": "bus",
+            "lat": 41.79542943000001,
+            "lng": -87.58388018900001,
+            "name": "S Hyde Park & 55th Street"
+        },
+        {
+            "id": 8988,
+            "type": "bus",
+            "lat": 41.79494178599998,
+            "lng": -87.596477445,
+            "name": "Woodlawn & 55th Street"
+        },
+        {
+            "id": 9131,
+            "type": "bus",
+            "lat": 41.785898429999975,
+            "lng": -87.599503072,
+            "name": "1111 East 60th Street"
+        },
+        {
+            "id": 9274,
+            "type": "bus",
+            "lat": 41.78956607700002,
+            "lng": -87.59635028100001,
+            "name": "Woodlawn & 58th Street"
+        },
+        {
+            "id": 9275,
+            "type": "bus",
+            "lat": 41.791299099000014,
+            "lng": -87.60151084400002,
+            "name": "Ellis & 57th Street"
+        },
+        {
+            "id": 9277,
+            "type": "bus",
+            "lat": 41.798350253000024,
+            "lng": -87.58394862400002,
+            "name": "S Hyde Park & 54th Street"
+        },
+        {
+            "id": 9430,
+            "type": "bus",
+            "lat": 41.80241300099999,
+            "lng": -87.58808299999998,
+            "name": "E Hyde Park & Lake Park"
+        },
+        {
+            "id": 9969,
+            "type": "bus",
+            "lat": 41.802250190999985,
+            "lng": -87.59664760700002,
+            "name": "Woodlawn & Hyde Park Blvd"
+        }
+]

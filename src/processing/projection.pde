@@ -24,31 +24,6 @@ CornerPinSurface surface;
 
 PGraphics offscreen;
 
-void draw() {
-
-  // Convert the mouse coordinate into surface coordinates
-  // this will allow you to use mouse events inside the 
-  // surface from your screen. 
-  PVector surfaceMouse = surface.getTransformedMouse();
-
-  // Draw the scene, offscreen
-  offscreen.beginDraw();
-  offscreen.background(255);
-  offscreen.fill(0, 255, 0);
-  offscreen.ellipse(surfaceMouse.x, surfaceMouse.y, 75, 75);
-  offscreen.shape(map, 0, 0, 800, 800);
-  offscreen.endDraw();
-
-  // most likely, you'll want a black background to minimize
-  // bleeding around your projection area
-  background(0);
- 
-  // render the scene, transformed using the corner pin surface
-  surface.render(offscreen);
-  
-
-}
-
 void keyPressed() {
   switch(key) {
   case 'c':
@@ -65,6 +40,18 @@ void keyPressed() {
   case 's':
     // saves the layout
     ks.save();
+    break;
+    
+  case 't':
+    mode = "trains";
+    break;
+    
+  case 'u':
+    mode = "buses";
+    break;
+    
+  case 'b':
+    mode = "bikes";
     break;
   
   case '1':

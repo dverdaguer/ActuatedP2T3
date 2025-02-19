@@ -5,11 +5,15 @@ import netP5.*;
 //constants
 //The soft limit on how many toios a laptop can handle is in the 10-12 range
 //the more toios you connect to, the more difficult it becomes to sustain the connection
-int nCubes = 5;
+int nCubes = 8;
 int cubesPerHost = 12;
 int maxMotorSpeed = 115;
 int xOffset;
 int yOffset;
+
+float minX = 41.80588;
+float minY = -87.60640;
+float range = 0.02537;
 
 int[] matDimension = {45, 45, 455, 455};
 
@@ -24,13 +28,20 @@ NetAddress[] server;
 //we'll keep the cubes here
 Cube[] cubes;
 
+JSONArray bikes, buses, trains;
+String mode = "bikes";
+
 void setup() {
   size(1000, 1000, P3D);
+  
+  bikes = loadJSONArray("bikes.json");
+  buses = loadJSONArray("buses.json");
+  trains = loadJSONArray("trains.json");
 
   // keystone
   ks = new Keystone(this);
   surface = ks.createCornerPinSurface(800, 800, 20);
-  offscreen = createGraphics(400, 300, P3D);
+  offscreen = createGraphics(800, 800, P3D);
   
   //launch OSC sercer
   oscP5 = new OscP5(this, 3333);
@@ -55,6 +66,64 @@ void setup() {
   // starting pos
   cubes[0].target(125, 300, 180);
   cubes[1].target(200, 300, 0);
+}
+
+void draw() {
+
+  // Convert the mouse coordinate into surface coordinates
+  // this will allow you to use mouse events inside the 
+  // surface from your screen. 
+  PVector surfaceMouse = surface.getTransformedMouse();
+
+  // Draw the scene, offscreen
+  offscreen.beginDraw();
+  offscreen.background(255);
+  offscreen.fill(0, 255, 0);
+  offscreen.ellipse(surfaceMouse.x, surfaceMouse.y, 75, 75);
+  offscreen.shape(map, 0, 0, 800, 800);
+  
+  if (mode == "bikes") {
+    for (int i = 0; i < bikes.size(); i++) {
+      JSONObject bike = bikes.getJSONObject(i); 
+  
+      float lat = bike.getFloat("lat");
+      float lng = bike.getFloat("lng");
+  
+      offscreen.fill(0, 0, 255);
+      offscreen.ellipse((lng - minY) / range * 800 - 135, (minX - lat) / range * 800 - 15, 25, 25);
+    }
+  } else if (mode == "trains") {
+    for (int i = 0; i < trains.size(); i++) {
+      JSONObject train = trains.getJSONObject(i); 
+  
+      float lat = train.getFloat("lat");
+      float lng = train.getFloat("lng");
+  
+      offscreen.fill(0, 255, 0);
+      offscreen.ellipse((lng - minY) / range * 800 - 135, (minX - lat) / range * 800 - 15, 25, 25);
+    }
+  } else if (mode == "buses") {
+    for (int i = 0; i < buses.size(); i++) {
+      JSONObject bus = buses.getJSONObject(i); 
+  
+      float lat = bus.getFloat("lat");
+      float lng = bus.getFloat("lng");
+  
+      offscreen.fill(255, 0, 0);
+      offscreen.ellipse((lng - minY) / range * 800 - 135, (minX - lat) / range * 800 - 15, 25, 25);
+    }
+  }
+  
+  offscreen.endDraw();
+
+  // most likely, you'll want a black background to minimize
+  // bleeding around your projection area
+  background(0);
+ 
+  // render the scene, transformed using the corner pin surface
+  surface.render(offscreen);
+  
+
 }
 
 //void draw() {

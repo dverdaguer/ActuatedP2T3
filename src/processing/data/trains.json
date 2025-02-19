@@ -1,0 +1,12 @@
+[
+        { "id": 4, "type": "train", "lat": 41.78708, "lng": -87.58912, "name": "Metra 59th St" },
+        { "id": 5, "type": "train", "lat": 41.77969, "lng": -87.59081, "name": "Metra 63rd St" },
+        { "id": 6, "type": "train", "lat": 41.79266, "lng": -87.58773, "name": "Metra 55th-56th-57th St" },
+        { "id": 7, "type": "train", "lat": 41.80146, "lng": -87.58726, "name": "Metra 51st/53rd St/Hyde Park" },
+        { "id": 8, "type": "train", "lat": 41.78049, "lng": -87.60594, "name": "Cottage Grove" },
+        { "id": 9, "type": "train", "lat": 41.78028, "lng": -87.61570, "name": "King Dr" },
+        { "id": 10, "type": "train", "lat": 41.79535, "lng": -87.61838, "name": "Garfield (Green)" },
+        { "id": 11, "type": "train", "lat": 41.80244, "lng": -87.61859, "name": "51st" },
+        { "id": 12, "type": "train", "lat": 41.79534, "lng": -87.63118, "name": "Garfield (Red)" },
+        { "id": 13, "type": "train", "lat": 41.78071, "lng": -87.63102, "name": "63rd" }
+]  

@@ -25,6 +25,25 @@ CornerPinSurface surface;
 PGraphics offscreen;
 
 void keyPressed() {
+  if (key == CODED) {
+    if (keyCode == UP) {
+      transY = transY - 5;
+      anchorY = anchorY - 5;
+    }
+    if (keyCode == DOWN) {
+      transY = transY + 5;
+      anchorY = anchorY + 5;
+    }
+    if (keyCode == LEFT) {
+      transX = transX - 5;
+      anchorX = anchorX - 5;
+    }
+    if (keyCode == RIGHT) {
+      transX = transX + 5;
+      anchorX = anchorX + 5;
+    }
+  }
+  
   switch(key) {
   case 'c':
     // enter/leave calibration mode, where surfaces can be warped 
@@ -52,6 +71,18 @@ void keyPressed() {
     
   case 'b':
     mode = "bikes";
+    break;
+    
+  case 'z':
+    zoom = zoom + 6;
+    anchorX = anchorX - 3;
+    anchorY = anchorY - 3;
+    break;
+    
+  case 'y':
+    zoom = zoom - 6;
+    anchorX = anchorX + 3;
+    anchorY = anchorY + 3;
     break;
   
   case '1':

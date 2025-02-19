@@ -35,12 +35,12 @@ void keyPressed() {
       anchorY = anchorY + 5;
     }
     if (keyCode == LEFT) {
-      transX = transX - 5;
-      anchorX = anchorX - 5;
-    }
-    if (keyCode == RIGHT) {
       transX = transX + 5;
       anchorX = anchorX + 5;
+    }
+    if (keyCode == RIGHT) {
+      transX = transX - 5;
+      anchorX = anchorX - 5;
     }
   }
   

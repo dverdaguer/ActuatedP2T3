@@ -92,9 +92,9 @@ void draw() {
       float lng = bike.getFloat("lng");
   
       offscreen.fill(0, 0, 255);
-      float coordX = (((lng - minY) / range * 800 - 135) - 400) * zoom / 800 + 400;
-      float coordY = (((minX - lat) / range * 800 - 15) - 400) * zoom / 800 + 400;
-      offscreen.ellipse(coordX + transX, coordY + transY, 25, 25);
+      float coordX = (((lng - minY) / range * 800 - 135) - 400) * zoom / 800 + 400 + transX;
+      float coordY = (((minX - lat) / range * 800 - 15) - 400) * zoom / 800 + 400 + transY;
+      offscreen.ellipse(coordX, coordY, 25, 25);
     }
   } else if (mode == "trains") {
     for (int i = 0; i < trains.size(); i++) {
@@ -104,9 +104,9 @@ void draw() {
       float lng = train.getFloat("lng");
   
       offscreen.fill(0, 255, 0);
-      float coordX = (((lng - minY) / range * 800 - 135) - 400) * zoom / 800 + 400;
-      float coordY = (((minX - lat) / range * 800 - 15) - 400) * zoom / 800 + 400;
-      offscreen.ellipse(coordX + transX, coordY + transY, 25, 25);
+      float coordX = (((lng - minY) / range * 800 - 135) - 400) * zoom / 800 + 400 + transX;
+      float coordY = (((minX - lat) / range * 800 - 15) - 400) * zoom / 800 + 400 + transY;
+      offscreen.ellipse(coordX, coordY, 25, 25);
     }
   } else if (mode == "buses") {
     for (int i = 0; i < buses.size(); i++) {
@@ -116,9 +116,9 @@ void draw() {
       float lng = bus.getFloat("lng");
   
       offscreen.fill(255, 0, 0);
-      float coordX = (((lng - minY) / range * 800 - 135) - 400) * zoom / 800 + 400;
-      float coordY = (((minX - lat) / range * 800 - 15) - 400) * zoom / 800 + 400;
-      offscreen.ellipse(coordX + transX, coordY + transY, 25, 25);
+      float coordX = (((lng - minY) / range * 800 - 135) - 400) * zoom / 800 + 400 + transX;
+      float coordY = (((minX - lat) / range * 800 - 15) - 400) * zoom / 800 + 400 + transY;
+      offscreen.ellipse(coordX, coordY, 25, 25);
     }
   }
   

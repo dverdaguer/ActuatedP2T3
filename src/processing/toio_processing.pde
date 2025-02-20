@@ -18,7 +18,7 @@ int zoom = 800;
 
 Boolean newPos = true;
 Boolean movingView = false;
-int selectedToio = 3;
+int selectedToio = -1;
 float drawX, drawY;
 int availability;
 

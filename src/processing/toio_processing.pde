@@ -19,7 +19,7 @@ int zoom = 800;
 Boolean newPos = true;
 Boolean movingView = false;
 int selectedToio = -1;
-float drawX, drawY;
+Boolean newSelection = false;
 int availability;
 
 int[] matDimension = {45, 45, 455, 455};
@@ -152,19 +152,19 @@ void draw() {
             String[] coords = split(c, '/');
             cubes[j].target(int(coords[0]), int(coords[1]), 180);
             
-            if (j == selectedToio) {
-              drawX = (int(coords[0]) - 60) * 800 / 370;
-              drawY = (int(coords[1]) - 60) * 800 / 370 - 75;
-              availability = int(random(0, 13));
-            }
-            
             delay(2000);
             j += 1;
           }
         }
     }
+    if (newSelection) {
+       availability = int(random(0, 13));
+       newSelection = false;
+    }
     
     if (selectedToio != -1) {
+              int drawX = (cubes[selectedToio].x - 60) * 800 / 370;
+              int drawY = (cubes[selectedToio].y - 60) * 800 / 370 - 75;
               println("------" + drawX + "   " + drawY);
             
               offscreen.fill(200, 200, 255);
@@ -262,19 +262,19 @@ void draw() {
             String[] coords = split(c, '/');
             cubes[j].target(int(coords[0]), int(coords[1]), 0);
             
-            if (j == selectedToio) {
-              drawX = (int(coords[0]) - 60) * 800 / 370;
-              drawY = (int(coords[1]) - 60) * 800 / 370 - 75;
-              availability = int(random(0, 16));
-            }
-            
             delay(2000);
             j += 1;
           }
         }
     }
+    if (newSelection) {
+         availability = int(random(0, 16));
+         newSelection = false;
+     }
     
         if (selectedToio != -1) {
+              int drawX = (cubes[selectedToio].x - 60) * 800 / 370;
+              int drawY = (cubes[selectedToio].y - 60) * 800 / 370 - 75;
               println("------" + drawX + "   " + drawY);
             
               offscreen.fill(200, 200, 255);

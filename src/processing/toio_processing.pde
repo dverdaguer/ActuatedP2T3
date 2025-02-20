@@ -115,7 +115,7 @@ void draw() {
   
   if (mode == "bikes") {
     String[] toioCoords;
-    toioCoords = new String[6];
+    toioCoords = new String[7];
     int k = 0;
     
     for (int i = 0; i < bikes.size(); i++) {
@@ -129,7 +129,7 @@ void draw() {
       float coordY = (((minX - lat) / range * 800 - 15) - 400) * zoom / 800 + 400 + transY;
       offscreen.ellipse(coordX, coordY, 25, 25);
    
-      if (i < 6 && coordX > 0 && coordY > 0) {
+      if (k < 7 && coordX > 0 && coordY > 0 && coordX < 800 && coordY < 800) {
         float toioX = coordX / 800 * 370 + 60;
         float toioY = coordY / 800 * 370 + 60;
         
@@ -140,7 +140,7 @@ void draw() {
         k += 1;
       }
     }
-    for (int z = k; z < 6; z++) {
+    for (int z = k; z < 7; z++) {
       toioCoords[z] = "z";
     }
     toioCoords = sort(toioCoords);
@@ -155,6 +155,7 @@ void draw() {
             delay(2000);
             j += 1;
           }
+          newPos = false;
         }
     }
     if (newSelection) {
@@ -177,10 +178,9 @@ void draw() {
               offscreen.text("Bikes Available: " + availability, drawX, drawY);
             }
     
-    newPos = false;
   } else if (mode == "trains") {
     String[] toioCoords;
-    toioCoords = new String[6];
+    toioCoords = new String[7];
     int k = 0;
     
     for (int i = 0; i < trains.size(); i++) {
@@ -194,7 +194,7 @@ void draw() {
       float coordY = (((minX - lat) / range * 800 - 15) - 400) * zoom / 800 + 400 + transY;
       offscreen.ellipse(coordX, coordY, 25, 25);
    
-      if (i < 6 && coordX > 0 && coordY > 0) {
+      if (i < 7 && coordX > 0 && coordY > 0) {
         float toioX = coordX / 800 * 370 + 60;
         float toioY = coordY / 800 * 370 + 60;
         
@@ -205,7 +205,7 @@ void draw() {
         k += 1;
       }
     }
-    for (int z = k; z < 6; z++) {
+    for (int z = k; z < 7; z++) {
       toioCoords[z] = "z";
     }
     toioCoords = sort(toioCoords);
@@ -224,7 +224,7 @@ void draw() {
     newPos = false;
   } else if (mode == "buses") {
     String[] toioCoords;
-    toioCoords = new String[6];
+    toioCoords = new String[7];
     int k = 0;
     
     for (int i = 0; i < buses.size(); i++) {
@@ -238,7 +238,7 @@ void draw() {
       float coordY = (((minX - lat) / range * 800 - 15) - 400) * zoom / 800 + 400 + transY;
       offscreen.ellipse(coordX, coordY, 25, 25);
    
-      if (i < 6 && coordX > 0 && coordY > 0) {
+      if (k < 7 && coordX > 0 && coordY > 0 && coordX < 800 && coordY < 800) {
         float toioX = coordX / 800 * 370 + 60;
         float toioY = coordY / 800 * 370 + 60;
         
@@ -249,13 +249,13 @@ void draw() {
         k += 1;
       }
     }
-    for (int z = k; z < 6; z++) {
+    for (int z = k; z < 7; z++) {
       toioCoords[z] = "z";
     }
     toioCoords = sort(toioCoords);
     if (newPos) {
         int j = 1;
-        for (int x = 0; x < 6; x++) {
+        for (int x = 0; x < 7; x++) {
           String c = toioCoords[x];
           if (c != "z") {
             println(c);
@@ -266,6 +266,7 @@ void draw() {
             j += 1;
           }
         }
+        newPos = false;
     }
     if (newSelection) {
          availability = int(random(0, 16));
@@ -287,7 +288,7 @@ void draw() {
               offscreen.text("Next Arrival: " + availability + " min", drawX, drawY);
             }
     
-    newPos = false;
+    
   }
   
   offscreen.endDraw();

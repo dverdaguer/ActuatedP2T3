@@ -31,15 +31,14 @@ void buttonDown(int id) {
       if (mode == "bikes") {
       mode = "buses";
       selectedToio = -1;
-      newSelection = true;
       moveToios();
     } else if (mode == "buses") {
       mode = "bikes";
       selectedToio = -1;
-      newSelection = true;
       moveToios();
     }
     } else {
+      newSelection = true;
       selectedToio = id;
     }
 

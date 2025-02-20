@@ -27,13 +27,20 @@ void moveToios() {
 void buttonDown(int id) {
     println("Button Pressed!");
     
-    if (mode == "bikes") {
+    if (id == 0) {
+      if (mode == "bikes") {
       mode = "buses";
+      selectedToio = -1;
       moveToios();
     } else if (mode == "buses") {
       mode = "bikes";
+      selectedToio = -1;
       moveToios();
     }
+    } else {
+      selectedToio = id;
+    }
+
 }
 
 //execute code when button on toio is released

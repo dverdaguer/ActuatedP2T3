@@ -68,6 +68,7 @@ void keyPressed() {
     
   case 'u':
     mode = "buses";
+    selectedToio = -1;
     moveToios();
     break;
     

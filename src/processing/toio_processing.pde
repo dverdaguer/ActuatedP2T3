@@ -18,6 +18,9 @@ int zoom = 800;
 
 Boolean newPos = true;
 Boolean movingView = false;
+int selectedToio = 3;
+float drawX, drawY;
+int availability;
 
 int[] matDimension = {45, 45, 455, 455};
 
@@ -145,14 +148,34 @@ void draw() {
         int j = 1;
         for (String c : toioCoords) {
           if (c != "z") {
-            print(c);
+            println(c);
             String[] coords = split(c, '/');
             cubes[j].target(int(coords[0]), int(coords[1]), 180);
+            
+            if (j == selectedToio) {
+              drawX = (int(coords[0]) - 60) * 800 / 370;
+              drawY = (int(coords[1]) - 60) * 800 / 370 - 75;
+              availability = int(random(0, 13));
+            }
+            
             delay(2000);
             j += 1;
           }
-         }
+        }
     }
+    
+    if (selectedToio != -1) {
+              println("------" + drawX + "   " + drawY);
+            
+              offscreen.fill(200, 200, 255);
+              offscreen.rectMode(CENTER);
+              offscreen.rect(drawX, drawY, 200, 50);
+              
+              offscreen.fill(0);  // Black text color
+              offscreen.textSize(24);  // Set the text size
+              offscreen.textAlign(CENTER, CENTER);  // Align the text
+              offscreen.text("Bikes Available: " + availability, drawX, drawY);
+            }
     
     newPos = false;
   } else if (mode == "trains") {
@@ -188,7 +211,6 @@ void draw() {
     toioCoords = sort(toioCoords);
     if (newPos) {
         int j = 1;
-        print(toioCoords);
         for (String c : toioCoords) {
           if (c != "z") {
             String[] coords = split(c, '/');
@@ -211,7 +233,7 @@ void draw() {
       float lat = bus.getFloat("lat");
       float lng = bus.getFloat("lng");
   
-      offscreen.fill(0, 0, 255);
+      offscreen.fill(255, 0, 0);
       float coordX = (((lng - minY) / range * 800 - 135) - 400) * zoom / 800 + 400 + transX;
       float coordY = (((minX - lat) / range * 800 - 15) - 400) * zoom / 800 + 400 + transY;
       offscreen.ellipse(coordX, coordY, 25, 25);
@@ -239,11 +261,31 @@ void draw() {
             println(c);
             String[] coords = split(c, '/');
             cubes[j].target(int(coords[0]), int(coords[1]), 0);
+            
+            if (j == selectedToio) {
+              drawX = (int(coords[0]) - 60) * 800 / 370;
+              drawY = (int(coords[1]) - 60) * 800 / 370 - 75;
+              availability = int(random(0, 16));
+            }
+            
             delay(2000);
             j += 1;
           }
-         }
+        }
     }
+    
+        if (selectedToio != -1) {
+              println("------" + drawX + "   " + drawY);
+            
+              offscreen.fill(200, 200, 255);
+              offscreen.rectMode(CENTER);
+              offscreen.rect(drawX, drawY, 200, 50);
+              
+              offscreen.fill(0);  // Black text color
+              offscreen.textSize(24);  // Set the text size
+              offscreen.textAlign(CENTER, CENTER);  // Align the text
+              offscreen.text("Next Arrival: " + availability + " min", drawX, drawY);
+            }
     
     newPos = false;
   }

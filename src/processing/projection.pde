@@ -63,14 +63,17 @@ void keyPressed() {
     
   case 't':
     mode = "trains";
+    moveToios();
     break;
     
   case 'u':
     mode = "buses";
+    moveToios();
     break;
     
   case 'b':
     mode = "bikes";
+    moveToios();
     break;
     
   case 'z':
@@ -86,7 +89,7 @@ void keyPressed() {
     break;
   
   case '1':
-      cubes[0].motor(115, 115, 5);
+      cubes[0].target(100, 400, 90);
       break;
       
     case '2':
@@ -100,16 +103,6 @@ void keyPressed() {
     case '3':
       int[][] targets = {{200, 200}, {200, 300, 90}, {300, 300}, {300, 200, 270}, {200, 200, 180}};
       cubes[0].multiTarget(0, targets);
-      break;
-    
-    case '4':
-      generateCircle(1);
-      break;
-    
-    case '5':
-      //int[][] lights = {{30, 0, 255, 0}, {30, 0, 0, 255}};
-      //cubes[0].led(5, lights);
-      generateCircle(0);
       break;
     
     case '6':

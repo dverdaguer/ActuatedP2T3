@@ -1,7 +1,6 @@
 import oscP5.*;
 import netP5.*;
 
-
 //constants
 //The soft limit on how many toios a laptop can handle is in the 10-12 range
 //the more toios you connect to, the more difficult it becomes to sustain the connection
@@ -16,6 +15,9 @@ float minY = -87.60640;
 float range = 0.02537;
 int anchorX, anchorY, transX, transY = 0;
 int zoom = 800;
+
+Boolean newPos = true;
+Boolean movingView = false;
 
 int[] matDimension = {45, 45, 455, 455};
 
@@ -32,6 +34,31 @@ Cube[] cubes;
 
 JSONArray bikes, buses, trains;
 String mode = "bikes";
+
+class Coordinate {
+  float x, y;
+  
+  // Constructor to create a coordinate
+  Coordinate(float x, float y) {
+    this.x = x;
+    this.y = y;
+  }
+  
+  // Method to display the coordinate
+  void display() {
+    ellipse(x, y, 10, 10);
+  }
+  
+  int compareTo(Coordinate coord) {
+      if (this.x < coord.x) {
+        return -1; // a comes before b
+      } else if (this.x > coord.x) {
+        return 1; // b comes before a
+      } else {
+        return 0; // they are equal
+      }
+    }
+ }
 
 void setup() {
   size(1000, 1000, P3D);
@@ -66,8 +93,7 @@ void setup() {
   frameRate(30);
 
   // starting pos
-  cubes[0].target(125, 300, 180);
-  cubes[1].target(200, 300, 0);
+  cubes[0].target(100, 400, 90);
 }
 
 void draw() {
@@ -85,6 +111,10 @@ void draw() {
   offscreen.shape(map, anchorX, anchorY, zoom, zoom);
   
   if (mode == "bikes") {
+    String[] toioCoords;
+    toioCoords = new String[6];
+    int k = 0;
+    
     for (int i = 0; i < bikes.size(); i++) {
       JSONObject bike = bikes.getJSONObject(i); 
   
@@ -95,31 +125,127 @@ void draw() {
       float coordX = (((lng - minY) / range * 800 - 135) - 400) * zoom / 800 + 400 + transX;
       float coordY = (((minX - lat) / range * 800 - 15) - 400) * zoom / 800 + 400 + transY;
       offscreen.ellipse(coordX, coordY, 25, 25);
+   
+      if (i < 6 && coordX > 0 && coordY > 0) {
+        float toioX = coordX / 800 * 370 + 60;
+        float toioY = coordY / 800 * 370 + 60;
+        
+        String prepend = "";
+        if (toioX < 100) prepend = "0";
+        
+        toioCoords[k] = (prepend + (int) toioX + "/" + (int) toioY);
+        k += 1;
+      }
     }
+    for (int z = k; z < 6; z++) {
+      toioCoords[z] = "z";
+    }
+    toioCoords = sort(toioCoords);
+    if (newPos) {
+        int j = 1;
+        for (String c : toioCoords) {
+          if (c != "z") {
+            print(c);
+            String[] coords = split(c, '/');
+            cubes[j].target(int(coords[0]), int(coords[1]), 180);
+            delay(2000);
+            j += 1;
+          }
+         }
+    }
+    
+    newPos = false;
   } else if (mode == "trains") {
+    String[] toioCoords;
+    toioCoords = new String[6];
+    int k = 0;
+    
     for (int i = 0; i < trains.size(); i++) {
       JSONObject train = trains.getJSONObject(i); 
   
       float lat = train.getFloat("lat");
       float lng = train.getFloat("lng");
   
-      offscreen.fill(0, 255, 0);
+      offscreen.fill(0, 0, 255);
       float coordX = (((lng - minY) / range * 800 - 135) - 400) * zoom / 800 + 400 + transX;
       float coordY = (((minX - lat) / range * 800 - 15) - 400) * zoom / 800 + 400 + transY;
       offscreen.ellipse(coordX, coordY, 25, 25);
+   
+      if (i < 6 && coordX > 0 && coordY > 0) {
+        float toioX = coordX / 800 * 370 + 60;
+        float toioY = coordY / 800 * 370 + 60;
+        
+        String prepend = "";
+        if (toioX < 100) prepend = "0";
+        
+        toioCoords[k] = (prepend + (int) toioX + "/" + (int) toioY);
+        k += 1;
+      }
     }
+    for (int z = k; z < 6; z++) {
+      toioCoords[z] = "z";
+    }
+    toioCoords = sort(toioCoords);
+    if (newPos) {
+        int j = 1;
+        print(toioCoords);
+        for (String c : toioCoords) {
+          if (c != "z") {
+            String[] coords = split(c, '/');
+            cubes[j].target(int(coords[0]), int(coords[1]), 180);
+            delay(2000);
+            j += 1;
+          }
+         }
+    }
+    
+    newPos = false;
   } else if (mode == "buses") {
+    String[] toioCoords;
+    toioCoords = new String[6];
+    int k = 0;
+    
     for (int i = 0; i < buses.size(); i++) {
       JSONObject bus = buses.getJSONObject(i); 
   
       float lat = bus.getFloat("lat");
       float lng = bus.getFloat("lng");
   
-      offscreen.fill(255, 0, 0);
+      offscreen.fill(0, 0, 255);
       float coordX = (((lng - minY) / range * 800 - 135) - 400) * zoom / 800 + 400 + transX;
       float coordY = (((minX - lat) / range * 800 - 15) - 400) * zoom / 800 + 400 + transY;
       offscreen.ellipse(coordX, coordY, 25, 25);
+   
+      if (i < 6 && coordX > 0 && coordY > 0) {
+        float toioX = coordX / 800 * 370 + 60;
+        float toioY = coordY / 800 * 370 + 60;
+        
+        String prepend = "";
+        if (toioX < 100) prepend = "0";
+        
+        toioCoords[k] = (prepend + (int) toioX + "/" + (int) toioY);
+        k += 1;
+      }
     }
+    for (int z = k; z < 6; z++) {
+      toioCoords[z] = "z";
+    }
+    toioCoords = sort(toioCoords);
+    if (newPos) {
+        int j = 1;
+        for (int x = 0; x < 6; x++) {
+          String c = toioCoords[x];
+          if (c != "z") {
+            println(c);
+            String[] coords = split(c, '/');
+            cubes[j].target(int(coords[0]), int(coords[1]), 0);
+            delay(2000);
+            j += 1;
+          }
+         }
+    }
+    
+    newPos = false;
   }
   
   offscreen.endDraw();
@@ -131,7 +257,42 @@ void draw() {
   // render the scene, transformed using the corner pin surface
   surface.render(offscreen);
   
-
+  
+  if (cubes[0].theta > 120) {
+    zoom = zoom + 6;
+    anchorX = anchorX - 3;
+    anchorY = anchorY - 3;
+    movingView = true;
+  }
+  else if (cubes[0].theta < 60) {
+    zoom = zoom - 6;
+    anchorX = anchorX + 3;
+    anchorY = anchorY + 3;
+    movingView = true;
+  }
+  else if (cubes[0].x > 120) {
+      transX = transX - 5;
+      anchorX = anchorX - 5;
+      movingView = true;
+  }
+  else if (cubes[0].x < 80) {
+      transX = transX + 5;
+      anchorX = anchorX + 5;
+      movingView = true;
+  }
+  else if (cubes[0].y < 380) {
+      transY = transY + 5;
+      anchorY = anchorY + 5;
+      movingView = true;
+  }
+  else if (cubes[0].y > 420) {
+      transY = transY - 5;
+      anchorY = anchorY - 5;
+      movingView = true;
+  } else if (movingView) {
+    newPos = true;
+    movingView = false;
+  }
 }
 
 //void draw() {
